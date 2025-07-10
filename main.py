@@ -58,7 +58,8 @@ def add_station_item(base_url, addon_handle, route, station, is_my_station: bool
     list_item = xbmcgui.ListItem(name)
     list_item.setArt(
         {
-            "icon": favicon
+            "icon": favicon,
+            "thumb": favicon
         }
     )
     list_item.setProperty('IsPlayable', 'true')
