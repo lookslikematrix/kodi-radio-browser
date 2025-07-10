@@ -9,12 +9,12 @@ jobs:
           set -e
           rm -rf dist
           mkdir -p dist
-          mkdir -p dist/kodi-radio-browser
-          rsync -av . dist/kodi-radio-browser --exclude .git --exclude .github --exclude dist
+          mkdir -p dist/plugin.audio.radiobrowser
+          rsync -av . dist/plugin.audio.radiobrowser --exclude .git --exclude .github --exclude dist
           cd dist
-          zip -r ../kodi-radio-browser.zip .
+          zip -r ../plugin.audio.radiobrowser.zip .
       - uses: actions/upload-artifact@v4
         with:
           path: |
-            kodi-radio-browser.zip
+            plugin.audio.radiobrowser.zip
 
