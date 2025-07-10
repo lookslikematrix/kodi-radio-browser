@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.audio.radiobrowser" name="Radio-Browser.info" version="1.2.0" provider-name="sailor">
+<addon id="plugin.audio.radiobrowser" name="radio-browser.info" version="2.0.0" provider-name="sailor">
   <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.31.0" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="main.py">
     <provides>audio</provides>
@@ -23,6 +24,15 @@ Vermisst du deine Lieblingsstation? Kein problem: geh auf www.radio-browser.info
     <license>GNU General Public License, Version 3</license>
     <website>https://www.radio-browser.info</website>
     <source>https://github.com/segler-alex/kodi-radio-browser</source>
+    <news>
+      2.0.0
+        - Update add-on for Kodi &gt;= 20
+        - Refactor add-on
+    </news>
     <email>segler_alex@web.de</email>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>
