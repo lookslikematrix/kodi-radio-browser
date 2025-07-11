@@ -1,0 +1,20 @@
+on: [push]
+jobs:
+  build:
+    name: 🔨 Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          set -e
+          rm -rf dist
+          mkdir -p dist
+          mkdir -p dist/plugin.audio.radiobrowser
+          rsync -av . dist/plugin.audio.radiobrowser --exclude .git --exclude .github --exclude dist
+          cd dist
+          zip -r ../plugin.audio.radiobrowser.zip .
+      - uses: actions/upload-artifact@v4
+        with:
+          path: |
+            plugin.audio.radiobrowser.zip
+
