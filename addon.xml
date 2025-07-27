@@ -9,19 +9,19 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en">Radio-Browser</summary>
-    <summary lang="bg">Radio-Browser</summary>
-    <summary lang="de">Radio-Browser</summary>
-    <description lang="en">Directory of radio stations that uses www.radio-browser.info as source.
+    <summary lang="en_GB">Radio-Browser</summary>
+    <summary lang="bg_BG">Radio-Browser</summary>
+    <summary lang="de_DE">Radio-Browser</summary>
+    <description lang="en_GB">Directory of radio stations that uses www.radio-browser.info as source.
 
 If you miss your favourite station, just go to www.radio-browser.info and add it yourself. It is a wiki like system.</description>
-    <description lang="bg">Колекция от радио станции, с източник www.radio-browser.info
+    <description lang="bg_BG">Колекция от радио станции, с източник www.radio-browser.info
 
 Ако любимата ви станция не е в списъка, можете да я добавите като посетите www.radio-browser.info</description>
-    <description lang="de">Verzeichnis von Radio-Stationen das www.radio-browser.info als Quelle nutzt.
+    <description lang="de_DE">Verzeichnis von Radio-Stationen das www.radio-browser.info als Quelle nutzt.
 
 Vermisst du deine Lieblingsstation? Kein problem: geh auf www.radio-browser.info und füge sie für alle Benutzer hinzu!</description>
-    <license>GNU General Public License, Version 3</license>
+    <license>GPL-3.0-or-later</license>
     <website>https://www.radio-browser.info</website>
     <source>https://github.com/lookslikematrix/plugin.audio.radiobrowser</source>
     <news>
